@@ -27,7 +27,7 @@ session_start();
             </div>
 
             <div class="info">
-            <form  action="../include/edit_me.php" method="post" enctype="multipart/form-data">
+            <form  action="../include/edit_me.php" method="post">
             <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>">
                 <div class="col-md-10">
                     <label for="validationCustom02" class="form-label">*Nom d'utilisateur</label>
@@ -37,10 +37,6 @@ session_start();
                 <div class="col-md-10">
                     <label for="validationCustom01" class="form-label">*Numero de telephone </label>
                     <input type="text" class="form-control" id="validationCustom01" name="numero_tel" value="<?php echo $_SESSION['numero_tel']; ?>" required>
-                </div>
-<br>
-                <div class="col-md-10">
-                <input type="file" id="photo"  placeholder="Photo de profil"  class="input-group-text" name='photo'>
                 </div>
 <br>
                 <div class="col-md-10">
